@@ -1,36 +1,109 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Terminal Website
+
+A web application that simulates a terminal interface, built with React and Next.js. This interactive portfolio website presents information about the developer in a command-line style interface.
+
+![Terminal Website Screenshot](https://via.placeholder.com/800x400?text=Terminal+Website+Screenshot)
+
+## Features
+
+- Fully interactive command-line interface
+- Responsive design that works on desktop and mobile devices
+- Command history navigation using arrow keys
+- Tab completion for commands
+- Blinking cursor that follows user input
+- Custom ASCII art welcome banner
+
+## Available Commands
+
+- `help` - Shows all available commands
+- `whois` - Displays information about the developer
+- `projects` - Lists portfolio projects
+- `open [project-number]` - Shows details about a specific project
+- `skills` - Lists technical skills
+- `contact` - Shows contact information
+- `clear` - Clears the terminal screen
+
+## Technologies Used
+
+- React 19
+- Next.js 15.3.0
+- CSS Modules for styling
+- Deployed on Vercel
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Node.js (v18 or later recommended)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/terminal-website.git
+   cd terminal-website
+   ```
+
+2. Install dependencies:
+   ```
+   npm install
+   ```
+
+3. Run the development server:
+   ```
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+
+## Project Structure
+
+```
+terminal-website/
+├── src/
+│   ├── app/
+│   │   ├── components/
+│   │   │   ├── Terminal/
+│   │   │   │   ├── Terminal.js
+│   │   │   │   ├── Terminal.module.css
+│   │   │   │   └── commands.js
+│   │   │   └── TerminalPage.js
+│   │   ├── globals.css
+│   │   ├── layout.js
+│   │   ├── page.js
+│   │   └── page.module.css
+│   └── public/
+└── package.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Customization
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+To customize the terminal for your own use:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Edit the `commands.js` file to update the information about yourself, your projects, skills, and contact details.
+2. Modify the welcome ASCII art and message in the `Terminal.js` file.
+3. Update styling in the CSS files to match your preferred color scheme.
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+This project can be easily deployed using Vercel:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+npm run build
+npm run start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Or deploy directly with the Vercel CLI:
 
-## Deploy on Vercel
+```
+vercel
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
+
+## Author
+
+Ali Javadi - [Github](https://github.com/AliJavadi1997) - [LinkedIn](https://www.linkedin.com/in/alijavadi1997/) - [Email](mailto:contact@alijavadi.net)
