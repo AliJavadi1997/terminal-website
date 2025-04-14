@@ -2,7 +2,7 @@
 
 A web application that simulates a terminal interface, built with React and Next.js. This interactive portfolio website presents information about the developer in a command-line style interface.
 
-![Terminal Website Screenshot](https://via.placeholder.com/800x400?text=Terminal+Website+Screenshot)
+![Terminal Website Screenshot](/Screenshot%202025-04-14%20at%2012.51.07.png)
 
 ## Features
 
